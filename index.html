@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdulai Bah — Digital Architect & AI Innovator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=DM+Sans:wght@200;300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-name">AB</div>
+      <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+      <div class="preloader-text">Loading experience...</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-ab">AB</span>
+      <span class="logo-dot"></span>
+    </a>
+    <div class="nav-center">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="nav-hire">
+      <span>Available for Work</span>
+      <div class="hire-dot"></div>
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mm-link">About</a>
+    <a href="#skills" class="mm-link">Skills</a>
+    <a href="#projects" class="mm-link">Projects</a>
+    <a href="#contact" class="mm-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Digital Architect · Sierra Leone</span>
+      </div>
+      <h1 class="hero-heading">
+        <span class="h-line" data-delay="0">Abdulai</span>
+        <span class="h-line gold" data-delay="100"><em>Bah</em></span>
+      </h1>
+      <p class="hero-sub">
+        I craft intelligent digital products — AI systems, mobile apps,
+        automation engines &amp; multimedia experiences
+        that move industries forward.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-gold">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          See My Work
+        </a>
+        <a href="#contact" class="btn-outline">Start a Project</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hc-monogram">AB</div>
+        <div class="hc-arabic">بِسْمِ اللَّه</div>
+        <div class="hc-badge">
+          <div class="badge-pulse"></div>
+          Open to Freelance
+        </div>
+        <div class="hc-stats">
+          <div class="hc-stat">
+            <span class="hs-num">4+</span>
+            <span class="hs-label">Platforms</span>
+          </div>
+          <div class="hc-divider"></div>
+          <div class="hc-stat">
+            <span class="hs-num">10+</span>
+            <span class="hs-label">Projects</span>
+          </div>
+          <div class="hc-divider"></div>
+          <div class="hc-stat">
+            <span class="hs-num">∞</span>
+            <span class="hs-label">Vision</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card-glow"></div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-wheel">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>React Native</span><span class="dot">·</span>
+      <span>AI Builder</span><span class="dot">·</span>
+      <span>Make.com</span><span class="dot">·</span>
+      <span>Voiceflow</span><span class="dot">·</span>
+      <span>Supabase</span><span class="dot">·</span>
+      <span>Photoshop</span><span class="dot">·</span>
+      <span>Automation</span><span class="dot">·</span>
+      <span>Chatbots</span><span class="dot">·</span>
+      <span>React Native</span><span class="dot">·</span>
+      <span>AI Builder</span><span class="dot">·</span>
+      <span>Make.com</span><span class="dot">·</span>
+      <span>Voiceflow</span><span class="dot">·</span>
+      <span>Supabase</span><span class="dot">·</span>
+      <span>Photoshop</span><span class="dot">·</span>
+      <span>Automation</span><span class="dot">·</span>
+      <span>Chatbots</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <div class="section-eyebrow">
+          <span class="ey-num">01</span>
+          <span class="ey-label">About Me</span>
+        </div>
+        <h2 class="section-title">
+          Where creativity<br/>meets <em>engineering</em>
+        </h2>
+        <p class="about-body">
+          I'm a <strong>Multimedia & Technology student</strong> at Limkokwing University, Sierra Leone —
+          building digital products that operate at global scale. My work blends
+          technical depth with creative vision across apps, AI systems, and automation.
+        </p>
+        <p class="about-body">
+          Beyond code, I'm a committed <strong>Arabic language learner</strong>, a passionate public
+          speaker trained in rhetoric and storytelling, and a person grounded in deep Islamic faith.
+          Everything I build carries purpose.
+        </p>
+        <div class="about-pills">
+          <span class="pill">🇸🇱 Sierra Leone</span>
+          <span class="pill">🤖 AI Builder</span>
+          <span class="pill">📱 Mobile Dev</span>
+          <span class="pill">🗣️ Public Speaker</span>
+          <span class="pill">🌙 Arabic Learner</span>
+          <span class="pill">⚡ Automation</span>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <div class="about-portrait">
+          <div class="portrait-box">
+            <div class="portrait-mono">AB</div>
+            <div class="portrait-ar">الله</div>
+          </div>
+          <div class="portrait-frame-1"></div>
+          <div class="portrait-frame-2"></div>
+          <div class="portrait-tag">
+            <span class="pt-icon">✦</span>
+            Available for Global Projects
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">
+          <span class="ey-num">02</span>
+          <span class="ey-label">Skills</span>
+        </div>
+        <h2 class="section-title">Built for the<br/><em>digital economy</em></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-block reveal">
+          <div class="sb-top">
+            <div class="sb-icon">📱</div>
+            <div class="sb-num">01</div>
+          </div>
+          <h3 class="sb-title">App Development</h3>
+          <p class="sb-desc">Cross-platform mobile apps with live APIs, real payments, and production architecture.</p>
+          <div class="sb-tags">
+            <span>React Native</span><span>Expo</span><span>Supabase</span><span>Monime API</span>
+          </div>
+          <div class="sb-bar"><div class="sb-fill" style="--w:88%"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="sb-top">
+            <div class="sb-icon">🤖</div>
+            <div class="sb-num">02</div>
+          </div>
+          <h3 class="sb-title">AI & Chatbots</h3>
+          <p class="sb-desc">Conversational AI that automates customer service, lead capture, and business ops.</p>
+          <div class="sb-tags">
+            <span>Voiceflow</span><span>Botpress</span><span>Claude API</span>
+          </div>
+          <div class="sb-bar"><div class="sb-fill" style="--w:82%"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="sb-top">
+            <div class="sb-icon">⚡</div>
+            <div class="sb-num">03</div>
+          </div>
+          <h3 class="sb-title">Automation</h3>
+          <p class="sb-desc">Smart workflows that connect tools, kill repetitive tasks, and run 24/7 without you.</p>
+          <div class="sb-tags">
+            <span>Make.com</span><span>n8n</span><span>Zapier</span>
+          </div>
+          <div class="sb-bar"><div class="sb-fill" style="--w:80%"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="sb-top">
+            <div class="sb-icon">🎨</div>
+            <div class="sb-num">04</div>
+          </div>
+          <h3 class="sb-title">Multimedia Design</h3>
+          <p class="sb-desc">Visual identities, banners, campaigns, and presentations that command attention globally.</p>
+          <div class="sb-tags">
+            <span>Photoshop</span><span>Canva</span><span>PowerPoint</span>
+          </div>
+          <div class="sb-bar"><div class="sb-fill" style="--w:85%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">
+          <span class="ey-num">03</span>
+          <span class="ey-label">Selected Work</span>
+        </div>
+        <h2 class="section-title">Built &amp; <em>shipped</em></h2>
+      </div>
+
+      <div class="projects-list">
+
+        <div class="project-row reveal">
+          <div class="pr-left">
+            <span class="pr-num">01</span>
+            <div class="pr-info">
+              <div class="pr-cat">Mobile App · Fintech · Agriculture</div>
+              <h3 class="pr-title">Farmer Marketplace</h3>
+              <p class="pr-desc">A full-stack mobile marketplace connecting Sierra Leone farmers to buyers with real-time payments, Supabase backend, and React Native frontend.</p>
+              <div class="pr-stack">
+                <span>React Native</span><span>Expo</span><span>Supabase</span><span>Monime API</span>
+              </div>
+            </div>
+          </div>
+          <div class="pr-right">
+            <div class="pr-visual">
+              <div class="pv-icon">📱</div>
+              <div class="pv-glow"></div>
+            </div>
+            <a href="#" class="pr-link">View Project <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="project-row reveal">
+          <div class="pr-left">
+            <span class="pr-num">02</span>
+            <div class="pr-info">
+              <div class="pr-cat">AI Automation · No-Code</div>
+              <h3 class="pr-title">Smart Automation Pipeline</h3>
+              <p class="pr-desc">Multi-module Make.com scenarios with variable management and API triggers — automating real business processes without writing a single line of code.</p>
+              <div class="pr-stack">
+                <span>Make.com</span><span>API Integration</span><span>No-Code</span>
+              </div>
+            </div>
+          </div>
+          <div class="pr-right">
+            <div class="pr-visual">
+              <div class="pv-icon">⚡</div>
+              <div class="pv-glow"></div>
+            </div>
+            <a href="#" class="pr-link">View Project <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="project-row reveal">
+          <div class="pr-left">
+            <span class="pr-num">03</span>
+            <div class="pr-info">
+              <div class="pr-cat">Chatbot · Conversational AI</div>
+              <h3 class="pr-title">AI Chatbot System</h3>
+              <p class="pr-desc">Production-ready Voiceflow chatbot with structured flows, choice blocks, and intent handling — deployable in any customer-facing business context.</p>
+              <div class="pr-stack">
+                <span>Voiceflow</span><span>Conversational AI</span><span>UX Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="pr-right">
+            <div class="pr-visual">
+              <div class="pv-icon">🤖</div>
+              <div class="pv-glow"></div>
+            </div>
+            <a href="#" class="pr-link">View Project <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="project-row reveal">
+          <div class="pr-left">
+            <span class="pr-num">04</span>
+            <div class="pr-info">
+              <div class="pr-cat">Visual Design · Campaign</div>
+              <h3 class="pr-title">Samsung Galaxy S25 Ultra Campaign</h3>
+              <p class="pr-desc">A3 banner and research document for Samsung's flagship — Photoshop-crafted with brand-accurate visual identity, sharp typography, and color precision.</p>
+              <div class="pr-stack">
+                <span>Adobe Photoshop</span><span>Brand Design</span><span>Research</span>
+              </div>
+            </div>
+          </div>
+          <div class="pr-right">
+            <div class="pr-visual">
+              <div class="pv-icon">🎨</div>
+              <div class="pv-glow"></div>
+            </div>
+            <a href="#" class="pr-link">View Project <span>↗</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">
+          <span class="ey-num">04</span>
+          <span class="ey-label">Process</span>
+        </div>
+        <h2 class="section-title">How I <em>work</em></h2>
+      </div>
+      <div class="process-steps">
+        <div class="ps-item reveal">
+          <div class="ps-num">01</div>
+          <div class="ps-line"></div>
+          <h3 class="ps-title">Discover</h3>
+          <p class="ps-desc">Deeply understand your problem, users, and desired outcome before touching any tool.</p>
+        </div>
+        <div class="ps-item reveal">
+          <div class="ps-num">02</div>
+          <div class="ps-line"></div>
+          <h3 class="ps-title">Architect</h3>
+          <p class="ps-desc">Map out the full system — stack, flows, integrations — with intentional, scalable decisions.</p>
+        </div>
+        <div class="ps-item reveal">
+          <div class="ps-num">03</div>
+          <div class="ps-line"></div>
+          <h3 class="ps-title">Execute</h3>
+          <p class="ps-desc">Build fast and precise — code, automation, and design shipped with zero compromise.</p>
+        </div>
+        <div class="ps-item reveal">
+          <div class="ps-num">04</div>
+          <div class="ps-line"></div>
+          <h3 class="ps-title">Launch</h3>
+          <p class="ps-desc">Deliver docs, handoff files, and stay available to iterate. Good work never stops at launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="contact-inner reveal">
+      <div class="contact-bg-text">LET'S BUILD</div>
+      <div class="section-eyebrow centered">
+        <span class="ey-num">05</span>
+        <span class="ey-label">Contact</span>
+      </div>
+      <h2 class="section-title centered">
+        Have a project<br/><em>in mind?</em>
+      </h2>
+      <p class="contact-sub">
+        Whether you're a startup, institution, or individual with a bold idea —
+        I'm ready. From Freetown, for the world.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:your@email.com" class="btn-gold large">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4l7 6 7-6M2 4h14v10H2V4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Send an Email
+        </a>
+        <div class="contact-socials">
+          <a href="#" class="cs-link">LinkedIn</a>
+          <span class="cs-sep">·</span>
+          <a href="#" class="cs-link">GitHub</a>
+          <span class="cs-sep">·</span>
+          <a href="#" class="cs-link">Fiverr</a>
+          <span class="cs-sep">·</span>
+          <a href="#" class="cs-link">Upwork</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <span class="footer-logo">Abdulai Bah</span>
+      <span class="footer-tagline">Digital Architect · Sierra Leone</span>
+    </div>
+    <div class="footer-center">
+      <span class="footer-arabic">الله أكبر</span>
+    </div>
+    <div class="footer-right">
+      <span>© 2025 Abdulai Bah</span>
+    </div>
+  </footer>
+
+  <script>
+  /* ── PRELOADER ── */
+  window.addEventListener('load', function() {
+    var fill = document.getElementById('preloaderFill');
+    var loader = document.getElementById('preloader');
+    var w = 0;
+    var t = setInterval(function() {
+      w += 4;
+      fill.style.width = w + '%';
+      if (w >= 100) {
+        clearInterval(t);
+        setTimeout(function() {
+          loader.classList.add('done');
+        }, 200);
+      }
+    }, 20);
+  });
+
+  /* ── CUSTOM CURSOR ── */
+  var cur = document.getElementById('cursor');
+  var trail = document.getElementById('cursorTrail');
+  var mx = 0, my = 0, tx = 0, ty = 0;
+  document.addEventListener('mousemove', function(e) {
+    mx = e.clientX; my = e.clientY;
+    cur.style.left = mx + 'px';
+    cur.style.top  = my + 'px';
+  });
+  (function loop() {
+    tx += (mx - tx) * 0.1;
+    ty += (my - ty) * 0.1;
+    trail.style.left = tx + 'px';
+    trail.style.top  = ty + 'px';
+    requestAnimationFrame(loop);
+  })();
+
+  /* ── NAV SCROLL ── */
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function() {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  /* ── MOBILE MENU ── */
+  var burger = document.getElementById('burger');
+  var mMenu  = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('open');
+    mMenu.classList.toggle('open');
+  });
+  mMenu.querySelectorAll('.mm-link').forEach(function(l) {
+    l.addEventListener('click', function() {
+      burger.classList.remove('open');
+      mMenu.classList.remove('open');
+    });
+  });
+
+  /* ── SCROLL REVEAL ── */
+  var revEls = document.querySelectorAll('.reveal');
+  var revObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e, i) {
+      if (e.isIntersecting) {
+        setTimeout(function() { e.target.classList.add('visible'); }, i * 100);
+        revObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  revEls.forEach(function(el) { revObs.observe(el); });
+
+  /* ── SKILL BAR ANIMATION ── */
+  var barObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.sb-fill').forEach(function(b) {
+          b.style.width = b.style.getPropertyValue('--w') ||
+            getComputedStyle(b).getPropertyValue('--w');
+          b.classList.add('animate');
+        });
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.skill-block').forEach(function(el) { barObs.observe(el); });
+
+  /* ── PARTICLE CANVAS ── */
+  var canvas = document.getElementById('particleCanvas');
+  var ctx = canvas.getContext('2d');
+  var particles = [];
+  function resizeCanvas() {
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+  for (var i = 0; i < 55; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.5 + 0.3,
+      dx: (Math.random() - 0.5) * 0.3,
+      dy: (Math.random() - 0.5) * 0.3,
+      o: Math.random() * 0.5 + 0.1
+    });
+  }
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(function(p) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(212,168,67,' + p.o + ')';
+      ctx.fill();
+      p.x += p.dx; p.y += p.dy;
+      if (p.x < 0 || p.x > canvas.width)  p.dx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+    });
+    requestAnimationFrame(drawParticles);
+  }
+  drawParticles();
+
+  /* ── ACTIVE NAV LINK ── */
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', function() {
+    var pos = window.scrollY + 120;
+    sections.forEach(function(s) {
+      if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
+        navLinks.forEach(function(l) { l.classList.remove('active'); });
+        var active = document.querySelector('.nav-link[href="#' + s.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  });
+  </script>
+</body>
+</html>
