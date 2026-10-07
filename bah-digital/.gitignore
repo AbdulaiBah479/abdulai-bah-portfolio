@@ -1,0 +1,25 @@
+# Secrets - NEVER commit these
+.env
+*.key
+*.pem
+secrets/
+
+# Client private data stays on your machine/server, not in Git
+clients/*
+!clients/_template/
+!clients/README.md
+
+# Runtime data and backups
+data/*
+!data/.gitkeep
+backups/*
+!backups/.gitkeep
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+node_modules/
+*.log

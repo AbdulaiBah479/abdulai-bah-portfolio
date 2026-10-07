@@ -1,0 +1,11 @@
+client_id: client-000
+name: ""
+industry: ""
+country: ""
+contact: { name: "", email: "", phone: "" }
+services: []            # e.g. [ai-audit, chatbot, social-media]
+autonomy_level: 1       # see docs/GOVERNANCE.md
+data_consent:
+  cloud_models_allowed: false   # false = use local models only for their private data
+billing: { plan: "", monthly_usd: 0, payment_method: "" }
+notes: ""

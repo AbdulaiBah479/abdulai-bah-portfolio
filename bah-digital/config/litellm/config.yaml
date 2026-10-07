@@ -1,0 +1,83 @@
+# =====================================================================
+# Bah.Digital model router
+#
+# Agents never ask for a specific model. They ask for a JOB:
+#   bah-fast      quick everyday tasks
+#   bah-coding    writing and fixing code
+#   bah-research  long reading, analysis, writing
+#   bah-embed     turning text into vectors for memory (RAG)
+#
+# Each job has a "free first" chain: the router tries the first option
+# and falls back to the next one if it fails or hits a quota.
+# Change models HERE, and no agent needs to change.
+#
+# Cloud model names change often. When one stops working, check the
+# provider's model list and update the name here.
+# =====================================================================
+
+model_list:
+  # ---- Local (always free, runs on your PC) --------------------------
+  - model_name: bah-local
+    litellm_params:
+      model: ollama_chat/qwen3:4b
+      api_base: http://ollama:11434
+
+  - model_name: bah-embed
+    litellm_params:
+      model: ollama/nomic-embed-text
+      api_base: http://ollama:11434
+
+  # ---- Free cloud tiers (need free API keys, see .env) ---------------
+  - model_name: bah-gemini
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: bah-groq
+    litellm_params:
+      model: groq/llama-3.3-70b-versatile
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: bah-openrouter-free
+    litellm_params:
+      model: openrouter/meta-llama/llama-3.3-70b-instruct:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # ---- Job names agents actually use ---------------------------------
+  - model_name: bah-fast
+    litellm_params:
+      model: groq/llama-3.3-70b-versatile
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: bah-research
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: bah-coding
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  # ---- Claude API (PAID, disabled until you add ANTHROPIC_API_KEY) ---
+  # - model_name: bah-premium
+  #   litellm_params:
+  #     model: anthropic/claude-sonnet-5-5
+  #     api_key: os.environ/ANTHROPIC_API_KEY
+
+router_settings:
+  num_retries: 1
+  timeout: 120
+  # If the first choice fails, try these in order. Local is the last
+  # safety net, because it always works even with no internet.
+  fallbacks:
+    - bah-fast:     [bah-gemini, bah-openrouter-free, bah-local]
+    - bah-research: [bah-groq, bah-openrouter-free, bah-local]
+    - bah-coding:   [bah-openrouter-free, bah-groq, bah-local]
+
+litellm_settings:
+  drop_params: true
+  telemetry: false
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
