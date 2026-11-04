@@ -1,0 +1,6 @@
+asset_class,symbol,account,quantity,cost_basis,currency,target_weight,notes
+etf,VT,core,0,0,USD,0.50,global equity example
+bond_etf,BND,core,0,0,USD,0.20,bonds example
+dividend_etf,SCHD,core,0,0,USD,0.10,income example
+crypto,BTC,satellite,0,0,USDT,0.05,
+cash,USD,cash,0,0,USD,0.15,emergency fund held separately

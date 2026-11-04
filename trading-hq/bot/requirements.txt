@@ -1,0 +1,12 @@
+# core (required)
+pandas>=2.0
+numpy>=1.26
+# data + execution (optional, install when needed)
+ccxt>=4.0          # Binance + 100 other crypto exchanges (market data needs no key)
+yfinance>=0.2      # stocks / ETFs / FX / indices (unofficial Yahoo data, personal use)
+python-dotenv>=1.0 # load API keys from .env
+# research extras (optional)
+# quantstats       # tear sheets
+# pandas-ta        # 130+ indicators
+# vectorbt         # fast vectorised research
+# scikit-learn     # ML experiments

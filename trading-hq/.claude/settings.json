@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m unittest:*)",
+      "Bash(python3 -m unittest:*)",
+      "Bash(python -m tradingbot:*)",
+      "Bash(python3 -m tradingbot:*)",
+      "Bash(python3 tools/calc.py:*)",
+      "Bash(python tools/calc.py:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./bot/.env)",
+      "Read(./bot/.env.*)"
+    ]
+  }
+}
