@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/income_report.py:*)",
+      "Bash(bash scripts/new_client.sh:*)",
+      "Bash(bash scripts/build_ebook.sh:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./clients/**/secrets*)"
+    ]
+  }
+}

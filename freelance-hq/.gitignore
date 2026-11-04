@@ -1,0 +1,12 @@
+# Private client work and secrets
+clients/*
+!clients/.gitkeep
+.env
+.env.*
+!.env.example
+.mcp.json
+# Build output
+ebooks/*/build/
+*.epub
+*.pdf
+.DS_Store
