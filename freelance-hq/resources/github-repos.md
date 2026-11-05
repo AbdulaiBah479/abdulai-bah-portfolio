@@ -1,5 +1,7 @@
 # Verified GitHub repos for this business
 
+> About 300 repos. Too many to learn: start with `repo-picker-by-goal.md`, which tells you which one or two to use for each goal.
+
 Every repo below was confirmed to exist via GitHub search on **2026-11-04** (stars rounded; licences as reported by GitHub). **Check the licence before using any repo commercially or for client work.** "NOASSERTION" = custom or multiple licences: read it. AGPL = strong copyleft: fine for your own internal use, careful when offering it to others as a service.
 
 ## 1. Claude: skills, agents, plugins, prompts
@@ -145,6 +147,261 @@ Every repo below was confirmed to exist via GitHub search on **2026-11-04** (sta
 | Infisical/infisical | 30k | custom | Secrets management |
 | bitwarden/server | 21k | custom | Password manager (use the free hosted Bitwarden unless you self-host) |
 | InvoiceShelf/InvoiceShelf | 2k | AGPL-3.0 | Light invoicing |
+
+## 13. Claude, Anthropic and MCP (official and community)
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| anthropics/claude-code | 155k | see repo | Claude Code itself: docs, issues, examples |
+| anthropics/claude-agent-sdk-python | 8k | MIT | Build your own agents with Python |
+| anthropics/claude-code-action | 10k | MIT | Run Claude in GitHub (reviews, fixes) |
+| anthropics/anthropic-sdk-python | 4k | Apache-2.0 | Call Claude from Python (chatbot projects) |
+| anthropics/anthropic-sdk-typescript | 2k | Apache-2.0 | Call Claude from JavaScript/TypeScript |
+| anthropics/prompt-eng-interactive-tutorial | 39k | see repo | Free hands-on prompt-writing course |
+| anthropics/courses | 23k | see repo | Anthropic's courses. **Archived: still readable, may be outdated** |
+| modelcontextprotocol/python-sdk | 25k | MIT | Build MCP servers in Python |
+| modelcontextprotocol/typescript-sdk | 14k | see repo | Build MCP servers in TypeScript |
+| modelcontextprotocol/inspector | 11k | see repo | Test MCP servers visually |
+| punkpeye/awesome-mcp-servers | 97k | MIT | Directory of MCP servers |
+| wong2/awesome-mcp-servers | 4k | MIT | Another MCP directory |
+| f/prompts.chat | 176k | see repo | Huge public prompt library (formerly awesome-chatgpt-prompts) |
+| dair-ai/Prompt-Engineering-Guide | 80k | MIT | Prompt engineering lessons |
+| NirDiamant/Prompt_Engineering | 8k | see repo | Prompt techniques with notebooks |
+| NirDiamant/GenAI_Agents | 25k | see repo | Tutorials for building agents |
+| Shubhamsaboo/awesome-llm-apps | 144k | Apache-2.0 | Many small LLM app examples to copy ideas from |
+| e2b-dev/awesome-ai-agents | 31k | see repo | Directory of AI agents |
+| openai/openai-cookbook | 77k | MIT | Recipes that transfer to any LLM |
+| mlabonne/llm-course | 85k | Apache-2.0 | Learn how LLMs work |
+
+## 14. More AI building blocks (chat apps, local models, RAG, coding agents)
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| ggml-org/llama.cpp | 133k | MIT | Run small local models on modest PCs |
+| janhq/jan | 45k | custom | Offline desktop chat app |
+| Mintplex-Labs/anything-llm | 68k | MIT | Private "chat with your documents" app (chatbot demos) |
+| LibreChat-AI/LibreChat | 47k | MIT | Self-hosted multi-model chat |
+| ChatGPTNextWeb/NextChat | 89k | MIT | Light chat web app |
+| infiniflow/ragflow | 94k | Apache-2.0 | Document-based RAG engine |
+| khoj-ai/khoj | 38k | AGPL-3.0 | Personal AI second brain |
+| assafelovic/gpt-researcher | 30k | Apache-2.0 | Automated research reports (always verify sources) |
+| huggingface/smolagents | 30k | Apache-2.0 | Tiny agent framework |
+| openai/openai-agents-python | 31k | MIT | Agent framework (multi-provider ideas) |
+| microsoft/autogen | 62k | CC-BY-4.0 | Multi-agent framework |
+| stanfordnlp/dspy | 39k | MIT | Program prompts instead of hand-writing |
+| BerriAI/litellm | 63k | custom | One API for many LLMs, cost tracking |
+| qdrant/qdrant | 35k | Apache-2.0 | Vector database |
+| chroma-core/chroma | 30k | Apache-2.0 | Easy vector database for demos |
+| weaviate/weaviate | 17k | custom | Vector database |
+| pgvector/pgvector | 24k | custom | Vectors inside PostgreSQL |
+| Aider-AI/aider | 50k | Apache-2.0 | AI pair-programming in the terminal |
+| cline/cline | 71k | Apache-2.0 | Coding agent in VS Code |
+| continuedev/continue | 36k | Apache-2.0 | AI code assistant for editors |
+| ggml-org/whisper.cpp | 55k | MIT | Fast offline speech-to-text |
+| m-bain/whisperX | 25k | BSD-2-Clause | Transcripts with word timing and speakers |
+| fishaudio/fish-speech | 34k | custom | Text-to-speech (check voice/model licence before selling) |
+| rany2/edge-tts | 12k | custom | Simple text-to-speech from Python (read terms of service) |
+
+## 15. Business operations: ERP, CRM, projects, knowledge, support
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| odoo/odoo | 56k | custom | All-in-one business suite |
+| frappe/erpnext | 41k | GPL-3.0 | ERP: accounting, invoicing, projects |
+| Dolibarr/dolibarr | 8k | GPL-3.0 | Light ERP/CRM for small firms |
+| espocrm/espocrm | 4k | AGPL-3.0 | CRM |
+| monicahq/monica | 26k | AGPL-3.0 | Personal CRM (relationships, follow-ups) |
+| opf/openproject | 17k | GPL-3.0 | Project management |
+| Leantime/leantime | 12k | AGPL-3.0 | Project management for non-experts |
+| kanboard/kanboard | 10k | MIT | Simple kanban board |
+| wekan/wekan | 21k | MIT | Trello-style boards |
+| outline/outline | 41k | custom | Team wiki and docs |
+| docmost/docmost | 22k | AGPL-3.0 | Wiki and documentation |
+| BookStackApp/BookStack | 19k | MIT | Wiki: great for client handbooks |
+| paperless-ngx/paperless-ngx | 48k | GPL-3.0 | Scan, tag and search your documents/receipts |
+| nextcloud/server | 37k | AGPL-3.0 | Your own file storage and calendar |
+| zulip/zulip | 26k | Apache-2.0 | Team chat |
+| RocketChat/Rocket.Chat | 46k | custom | Team and customer chat |
+| alextselegidis/easyappointments | 4k | GPL-3.0 | Appointment booking page |
+| OpenSignLabs/OpenSign | 7k | custom | E-signatures |
+| shlinkio/shlink | 5k | MIT | Your own short links with stats |
+| louislam/uptime-kuma | 93k | MIT | Monitor client websites and get alerts (a care-plan service) |
+| hoppscotch/hoppscotch | 81k | MIT | Test APIs in the browser |
+
+## 16. Automation and no-code/low-code engines
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| huginn/huginn | 50k | MIT | Agents that watch the web and act |
+| node-red/node-red | 24k | Apache-2.0 | Visual flows, great for IoT and simple automations |
+| windmill-labs/windmill | 18k | custom | Scripts and workflows with UI |
+| triggerdotdev/trigger.dev | 17k | Apache-2.0 | Background jobs for AI apps |
+| appwrite/appwrite | 58k | BSD-3-Clause | Backend-as-a-service (auth, database, storage) |
+| strapi/strapi | 73k | custom | Headless CMS for client sites |
+| directus/directus | 39k | custom | Database to API and admin panel |
+| nocobase/nocobase | 25k | see repo | No-code business app builder |
+| teableio/teable | 22k | custom | Airtable-style database |
+| botpress/botpress | 15k | MIT | Chatbot builder |
+| heyform/heyform | 9k | AGPL-3.0 | Form builder |
+
+## 17. Selling online: shops, payments, community, ticketing
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| saleor/saleor | 24k | BSD-3-Clause | Headless e-commerce |
+| bagisto/bagisto | 28k | MIT | Laravel e-commerce |
+| spree/spree | 16k | BSD-3-Clause | Ruby e-commerce |
+| woocommerce/woocommerce | 11k | GPL-2.0 | WordPress shops |
+| juspay/hyperswitch | 46k | Apache-2.0 | Payment switch (advanced) |
+| discourse/discourse | 48k | GPL-2.0 | Community forum |
+| flarum/flarum | 16k | MIT | Light forum |
+| pretix/pretix | 3k | custom | Event ticketing |
+| wagtail/wagtail | 21k | BSD-3-Clause | CMS on Django |
+| decaporg/decap-cms | 19k | MIT | Simple editor for static sites (client-friendly) |
+
+## 18. Marketing, email, analytics, SEO and research
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| PostHog/posthog | 41k | custom | Product analytics |
+| matomo-org/matomo | 22k | GPL-3.0 | Web analytics |
+| arp242/goatcounter | 6k | custom | Very simple, privacy-friendly stats |
+| Openpanel-dev/openpanel | 7k | AGPL-3.0 | Simple analytics |
+| growthbook/growthbook | 9k | custom | A/B testing your pages/gigs ideas |
+| GoogleChrome/lighthouse | 31k | Apache-2.0 | Speed/SEO/accessibility audit (use in `/audit`) |
+| inovector/mixpost | 4k | MIT | Social media scheduling |
+| pentacent/keila | 2k | AGPL-3.0 | Newsletter tool |
+| dittofeed/dittofeed | 3k | MIT | Customer messaging automation |
+| scrapy/scrapy | 65k | BSD-3-Clause | Web scraping framework (respect site rules and law) |
+| apify/crawlee | 26k | Apache-2.0 | Crawler toolkit |
+| ScrapeGraphAI/Scrapegraph-ai | 33k | MIT | AI-powered scraping |
+| microsoft/playwright | 99k | Apache-2.0 | Browser automation and testing (website QA service) |
+| puppeteer/puppeteer | 96k | Apache-2.0 | Browser automation, screenshots, PDFs |
+
+## 19. Data, dashboards and reports (sellable "reporting" offers)
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| metabase/metabase | 50k | custom | Dashboards for small teams |
+| apache/superset | 75k | Apache-2.0 | Advanced BI |
+| grafana/grafana | 78k | AGPL-3.0 | Metrics dashboards |
+| streamlit/streamlit | 46k | Apache-2.0 | Quick data apps in Python |
+| gradio-app/gradio | 44k | Apache-2.0 | Demo AI apps with a web UI |
+| marimo-team/marimo | 23k | Apache-2.0 | Reproducible notebooks |
+| evidence-dev/evidence | 7k | MIT | Reports from SQL + Markdown |
+| duckdb/duckdb | 43k | MIT | Fast analysis of CSV/Parquet files |
+| pandas-dev/pandas | 50k | BSD-3-Clause | Data cleaning in Python |
+| jupyterlab/jupyterlab | 15k | BSD-3-Clause | Notebooks |
+
+## 20. Writing, ebooks, documentation and note-taking
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| readest/readest | 26k | AGPL-3.0 | Ebook reader: test your EPUB |
+| janeczku/calibre-web | 19k | GPL-3.0 | Web library for your ebooks |
+| advplyr/audiobookshelf | 15k | GPL-3.0 | Audiobook and podcast server |
+| rust-lang/mdBook | 22k | MPL-2.0 | Online books from Markdown |
+| honkit/honkit | 4k | Apache-2.0 | Books from Markdown |
+| quarto-dev/quarto-cli | 6k | custom | Books, reports, slides from Markdown |
+| squidfunk/mkdocs-material | 28k | MIT | Beautiful documentation sites |
+| vuejs/vitepress | 18k | MIT | Docs/blog sites |
+| withastro/starlight | 10k | MIT | Docs sites on Astro |
+| languagetool-org/languagetool | 15k | LGPL-2.1 | Grammar checker |
+| logseq/logseq | 45k | AGPL-3.0 | Outliner notes |
+| siyuan-note/siyuan | 47k | AGPL-3.0 | Notes and knowledge base |
+| laurent22/joplin | 57k | custom | Notes |
+| TriliumNext/Trilium | 39k | AGPL-3.0 | Hierarchical notes |
+
+## 21. Design, video, audio and images
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| obsproject/obs-studio | 79k | GPL-2.0 | Screen and video recording (courses, demos) |
+| mltframework/shotcut | 16k | GPL-3.0 | Video editor |
+| OpenShot/openshot-qt | 7k | custom | Easy video editor |
+| mifi/lossless-cut | 46k | GPL-2.0 | Quick lossless trimming |
+| HandBrake/HandBrake | 25k | custom | Video compression |
+| remotion-dev/remotion | 71k | custom | Make videos with code. Read the licence terms for commercial use |
+| ManimCommunity/manim | 42k | MIT | Animated explainer visuals |
+| tldraw/tldraw | 51k | custom | Whiteboard/diagram SDK |
+| jgraph/drawio | 9k | Apache-2.0 | Diagrams |
+| d2lang/d2 | 26k | MPL-2.0 | Diagrams from text |
+| lucide-icons/lucide | 26k | custom | Open icons |
+| tabler/tabler-icons | 23k | MIT | Open icons |
+| rsms/inter | 20k | OFL-1.1 | Clean free font |
+| google/fonts | 21k | various | Google Fonts sources (each font has its own licence) |
+| lovell/sharp | 33k | Apache-2.0 | Fast image resizing in Node |
+| ImageMagick/ImageMagick | 18k | custom | Command-line image tools |
+| AUTOMATIC1111/stable-diffusion-webui | 165k | AGPL-3.0 | Local image generation UI. **Model and output licences vary; read them before selling images** |
+| lllyasviel/Fooocus | 54k | GPL-3.0 | Simpler local image generation |
+| invoke-ai/InvokeAI | 29k | Apache-2.0 | Image generation studio. Same warning on model licences |
+
+## 22. Web and app building (templates and frameworks for client projects)
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| vercel/next.js | 143k | MIT | React framework |
+| shadcn-ui/ui | 127k | MIT | Copy-paste UI components |
+| tailwindlabs/tailwindcss | 98k | MIT | Styling |
+| sveltejs/svelte | 89k | MIT | Light front-end framework |
+| nuxt/nuxt | 61k | MIT | Vue framework |
+| vitejs/vite | 84k | MIT | Fast dev tool |
+| expo/expo | 53k | MIT | Mobile apps with React Native |
+| flutter/flutter | 181k | BSD-3-Clause | Mobile apps from one codebase |
+| tauri-apps/tauri | 113k | Apache-2.0 | Small desktop apps |
+| fastapi/fastapi | 104k | MIT | Python APIs (chatbot backends) |
+| django/django | 92k | BSD-3-Clause | Python web framework |
+| laravel/laravel | 85k | none stated | PHP framework |
+| honojs/hono | 33k | MIT | Tiny web framework |
+| prisma/orm | 48k | Apache-2.0 | Database toolkit (Prisma's repo was renamed) |
+| drizzle-team/drizzle-orm | 36k | Apache-2.0 | Database toolkit |
+| nhost/nhost | 9k | MIT | Backend platform |
+| mui/material-ui | 99k | MIT | UI components |
+| mantinedev/mantine | 32k | MIT | UI components |
+| saadeghi/daisyui | 43k | MIT | Tailwind component classes |
+| themesberg/flowbite | 9k | MIT | Tailwind components |
+| tabler/tabler | 42k | MIT | Admin dashboard template |
+| ColorlibHQ/AdminLTE | 46k | MIT | Admin dashboard template |
+| ixartz/Next-js-Boilerplate | 13k | MIT | Next.js starter |
+| ixartz/SaaS-Boilerplate | 7k | MIT | SaaS starter (auth, billing) |
+| t3-oss/create-t3-app | 29k | MIT | Full-stack starter |
+| obytes/react-native-template-obytes | 4k | MIT | Mobile starter |
+| coollabsio/coolify | 66k | Apache-2.0 | Your own Vercel/Heroku-like host |
+| dokku/dokku | 32k | MIT | Tiny self-hosted PaaS |
+| caprover/caprover | 15k | custom | Simple app hosting |
+| caddyserver/caddy | 79k | Apache-2.0 | Web server with automatic HTTPS |
+| cloudflare/workers-sdk | 5k | Apache-2.0 | Serverless apps |
+| cli/cli | 47k | MIT | GitHub from the terminal |
+| jesseduffield/lazygit | 84k | MIT | Easier Git in the terminal |
+| coder/code-server | 80k | MIT | VS Code in the browser |
+| zed-industries/zed | 93k | custom | Fast code editor |
+
+## 23. Learning and career (free)
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| microsoft/generative-ai-for-beginners | 123k | MIT | Build AI apps, lesson by lesson |
+| microsoft/Web-Dev-For-Beginners | 97k | MIT | 24-lesson web course |
+| microsoft/AI-For-Beginners | 71k | MIT | AI basics |
+| ossu/computer-science | 211k | MIT | Free CS degree path |
+| karpathy/nn-zero-to-hero | 25k | MIT | How neural networks work |
+| huggingface/course | 4k | Apache-2.0 | Hugging Face course |
+| jlevy/the-art-of-command-line | 163k | see repo | Terminal skills |
+| donnemartin/system-design-primer | 377k | custom | How big systems are built |
+| jwasham/coding-interview-university | 364k | CC-BY-SA-4.0 | Interview prep |
+| trimstray/the-book-of-secret-knowledge | 256k | MIT | Command-line and sysadmin tips |
+| sindresorhus/awesome | 531k | CC0-1.0 | The master list of curated lists |
+| vinta/awesome-python | 333k | custom | Python resources |
+| lukasz-madon/awesome-remote-job | 50k | none stated | Remote work resources |
+| remoteintech/remote-jobs | 41k | custom | Remote-friendly companies (possible direct clients) |
+| mezod/awesome-indie | 12k | custom | Indie hacker resources |
+| kdeldycke/awesome-billing | 1k | CC0-1.0 | Billing and payments reading list |
+
+## 24. Security, backup and private tools
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| dani-garcia/vaultwarden | 70k | AGPL-3.0 | Light Bitwarden-compatible server (self-host only if you can maintain it) |
+| keepassxreboot/keepassxc | 30k | custom | Offline password manager |
+| syncthing/syncthing | 90k | MPL-2.0 | Sync files between your devices privately |
+| restic/restic | 37k | BSD-2-Clause | Encrypted backups |
+| rclone/rclone | 61k | MIT | Sync to cloud storage |
+| borgbackup/borg | 14k | custom | Backups |
+| go-gitea/gitea | 59k | MIT | Private Git hosting (for client code) |
+
+## 25. Money tracking
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| beancount/beancount | 6k | GPL-2.0 | Plain-text accounting |
+| maybe-finance/maybe | 54k | AGPL-3.0 | Finance app. **Archived on GitHub: read-only, no updates** |
 
 ## How to use this list
 1. Don't install everything. RAM budget (8 GB) and attention are the limits; add a tool only when a real task needs it.

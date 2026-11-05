@@ -31,7 +31,7 @@ Then type: `/start` (Claude interviews you and writes your personal plan).
 | `.claude/commands/` | `/start` `/explain` `/idea` `/niche` `/gig` `/proposal` `/audit` `/case-study` `/chatbot` `/product` `/course` `/ebook` `/weekly-review` `/launch-checklist` |
 | `playbooks/` | 13 deep guides: strategy, Fiverr, Upwork, other platforms, direct outreach, productized services, digital products, ebooks, marketing, pricing, legal/tax, AI automation, delivery |
 | `cheatsheets/` | 18 one-pagers: Fiverr, Upwork, fees, storefronts, pricing, proposals, KDP, product launch, red flags, prompts, scripts, routines, SEO tags, n8n, chatbots, design rules, terminal/Git basics, Claude Code |
-| `resources/` | 96 verified GitHub repos, free tool stack, platform directory, MCP/connectors guide, learning list |
+| `resources/` | 299 verified GitHub repos + a pick-by-goal guide, free tools beyond GitHub, platform directory, MCP/connectors guide, learning list |
 | `templates/` | Gig, proposal, intake, scope, contract-lite, invoice, testimonial, cold email, ebook outline, product listing, launch emails |
 | `tracker/` | CSVs: leads, income, gigs, products, content calendar |
 | `scripts/` | `income_report.py`, `price_calc.py`, `new_client.sh`, `build_ebook.sh` (Pandoc), `init_tracker.sh` |
