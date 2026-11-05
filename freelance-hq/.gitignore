@@ -1,11 +1,22 @@
-# Private client work and secrets
+# ---- PRIVATE BUSINESS DATA: never commit to a public repo ----
 clients/*
 !clients/.gitkeep
+tracker/*.csv
+!tracker/*.example.csv
+tracker/reviews/*
+!tracker/reviews/.gitkeep
+my-plan.md
+products/*
+!products/.gitkeep
+ebooks/*
+!ebooks/.gitkeep
+!ebooks/_starter/
+# ---- secrets ----
 .env
 .env.*
 !.env.example
 .mcp.json
-# Build output
+# ---- build output ----
 ebooks/*/build/
 *.epub
 *.pdf

@@ -11,8 +11,8 @@
 | Description | Hook, 3-5 bullets, who it's for, CTA; limited HTML allowed |
 | Keywords | 7 phrases buyers search; no repeats of title words |
 | Categories | Most specific; request additional ones through KDP support (verify) |
-| Price | $2.99-$9.99 band for 70% royalty (verify) |
-| AI disclosure | Declare AI-generated content when asked (verify) |
+| Price | $2.99-$9.99 band for 70% royalty (2026 sources agree; one blog claims the cap rose to $12.99 in July 2026, unconfirmed: check KDP's pricing page) |
+| AI disclosure | Text an AI tool *created* must be disclosed when you publish, even if you edit it; text *you wrote* and only used AI to brainstorm/edit/polish is "AI-assisted" and not disclosed. Undisclosed AI content can get books removed and accounts suspended. Read KDP's current content guidelines. |
 | Cover | ~1600 x 2560 px, readable thumbnail |
 
 ## Pre-publish checklist

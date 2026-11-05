@@ -11,7 +11,7 @@ from pathlib import Path
 
 path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent / "tracker" / "income.csv"
 if not path.exists():
-    sys.exit(f"Not found: {path}")
+    sys.exit(f"Not found: {path}\nRun: bash scripts/init_tracker.sh")
 
 def money(v):
     try:

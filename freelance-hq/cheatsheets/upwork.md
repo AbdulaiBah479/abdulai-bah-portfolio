@@ -2,8 +2,8 @@
 
 | Item | Value / rule |
 |---|---|
-| Freelancer fee | 10% flat (verify) |
-| Proposal cost | Connects (verify price and per-job amounts) |
+| Freelancer fee | Variable 0-15% per contract, shown before you submit a proposal (2026 sources; older guides say 10% flat, which is outdated; verify) |
+| Proposal cost | Connects: about $0.15 each, free plan includes ~10/month, paid plan ~$19.99 for 100/month (secondary sources, verify); each job shows how many it costs |
 | Profile | Specialised headline, first 2 lines, portfolio, skills, specialised profiles |
 | Metrics | Job Success Score, response, on-time, earnings (verify thresholds) |
 | Protection | Fixed-price escrow; hourly requires work diary tracking |

@@ -89,6 +89,63 @@ Every repo below was confirmed to exist via GitHub search on **2026-11-04** (sta
 | engineerapart/TheRemoteFreelancer | 8k (Unlicense) | Guide and resources for remote freelancing |
 | hql287/awesome-free-services | 0.4k | Free services for startups and freelancers |
 
+## 8. AI chatbot, agent and RAG builders (for chatbot and automation offers)
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| langgenius/dify | 160k | custom | Visual builder for AI apps/chatbots with RAG |
+| open-webui/open-webui | 158k | custom | Self-hosted chat UI for local/remote models |
+| langflow-ai/langflow | 156k | MIT | Visual agent and RAG flow builder |
+| FlowiseAI/Flowise | 56k | custom | Drag-and-drop LLM flows. **Archived on GitHub: check status before relying on it** |
+| langchain-ai/langchain | 149k | MIT | LLM app framework |
+| langchain-ai/langgraph | 44k | MIT | Stateful agent workflows |
+| run-llama/llama_index | 53k | MIT | Data framework for RAG |
+| crewAIInc/crewAI | 61k | MIT | Multi-agent teams |
+| mem0ai/mem0 | 68k | Apache-2.0 | Memory layer for assistants |
+| mckaywrigley/chatbot-ui | 33k | MIT | Reference chat UI |
+| vercel/ai | 28k | custom | AI SDK for web apps |
+| promptfoo/promptfoo | 27k | MIT | Test and compare prompts, a quality gate for chatbots |
+| langfuse/langfuse | 37k | custom | Observability for LLM apps |
+
+## 9. Document, speech and data prep
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| microsoft/markitdown | 194k | MIT | Convert PDFs/Office/web to clean Markdown for chatbots |
+| docling-project/docling | 70k | MIT | Advanced document parsing |
+| Unstructured-IO/unstructured | 16k | Apache-2.0 | Document ingestion pipelines |
+| SYSTRAN/faster-whisper | 26k | MIT | Faster transcription (subtitle/transcript offers) |
+| coqui-ai/TTS | 46k | MPL-2.0 | Text-to-speech (check voice/model licences) |
+| rhasspy/piper | 11k | MIT | Lightweight TTS. **Archived: verify before relying on it** |
+
+## 10. Ready-made automation recipes
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| Zie619/n8n-workflows | 57k | MIT | Large library of n8n workflow examples to learn from |
+| enescingoz/awesome-n8n-templates | 26k | custom | Curated n8n templates. Rebuild, don't resell copies; check licences |
+
+## 11. Learn, find free tools, and build projects
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| ripienaar/free-for-dev | 142k | none stated | Free tiers of dev/infra services |
+| awesome-selfhosted/awesome-selfhosted | 334k | custom | Directory of self-hostable tools |
+| public-apis/public-apis | 496k | MIT | Free APIs for project ideas/demos |
+| freeCodeCamp/freeCodeCamp | 459k | BSD-3-Clause | Free coding curriculum |
+| EbookFoundation/free-programming-books | 401k | CC-BY-4.0 | Free learning books |
+| codecrafters-io/build-your-own-x | 560k | none stated | Learn by rebuilding tools |
+| practical-tutorials/project-based-learning | 289k | MIT | Tutorial-driven portfolio projects |
+| GoogleChrome/chrome-extensions-samples | 18k | Apache-2.0 | Chrome extension product ideas |
+
+## 12. More business and build tools
+| Repo | Stars | Licence | Use it for |
+|---|---|---|---|
+| makeplane/plane | 62k | AGPL-3.0 | Project management for clients |
+| penpot/penpot | 62k | MPL-2.0 | Open-source design tool |
+| AppFlowy-IO/AppFlowy | 78k | AGPL-3.0 | Notion-style workspace |
+| supabase/supabase | 115k | Apache-2.0 | Backend for app MVPs |
+| pocketbase/pocketbase | 62k | MIT | Tiny backend. **Archived: verify before relying on it** |
+| Infisical/infisical | 30k | custom | Secrets management |
+| bitwarden/server | 21k | custom | Password manager (use the free hosted Bitwarden unless you self-host) |
+| InvoiceShelf/InvoiceShelf | 2k | AGPL-3.0 | Light invoicing |
+
 ## How to use this list
 1. Don't install everything. RAM budget (8 GB) and attention are the limits; add a tool only when a real task needs it.
 2. Pin versions; read the licence; don't expose services to the internet without hardening.

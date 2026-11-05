@@ -6,7 +6,7 @@ Always compute: `net = price - platform fee - payment processing - withdrawal/FX
 | Platform | Typical seller fee |
 |---|---|
 | Fiverr | 20% |
-| Upwork | 10% flat (+ Connects to bid) |
+| Upwork | Variable 0-15% per contract (check on each offer) + Connects (~$0.15 each) to bid |
 | Freelancer.com | ~10% (min fees apply) |
 | PeoplePerHour | Tiered/variable |
 | Contra | Commission-free for freelancers (client-side fees/paid plans exist) |
@@ -15,7 +15,7 @@ Always compute: `net = price - platform fee - payment processing - withdrawal/FX
 ## Product storefronts
 | Platform | Typical cost | Good for |
 |---|---|---|
-| Gumroad | ~10% + payment processing on direct sales; higher on marketplace-discovered sales | Fast setup, audience |
+| Gumroad | ~10% per sale (some sources add $0.50 or processing fees; check); higher on marketplace-discovered sales | Fast setup, audience |
 | Payhip | Free plan with a % fee; paid plans reduce it | Digital downloads, courses, memberships |
 | Lemon Squeezy | ~5% + fixed fee, merchant of record | Global tax handling |
 | Ko-fi | Free tier with shop fee; Gold reduces | Creators, tips, small shops |

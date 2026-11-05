@@ -5,7 +5,7 @@ Start with **2 platforms maximum** (usually Fiverr + Upwork), then add others on
 | Platform | Best for | Model | Notes |
 |---|---|---|---|
 | Fiverr | Productized services, creative, quick gigs | Buyers find gigs | 20% fee |
-| Upwork | Dev, AI, writing, ongoing contracts | Proposals + invitations | 10% fee, Connects |
+| Upwork | Dev, AI, writing, ongoing contracts | Proposals + invitations | Variable 0-15% fee, Connects |
 | Freelancer.com | Wide mix, contests | Bidding | Competitive, low-budget heavy |
 | PeoplePerHour | UK/EU buyers, hourlies | Offers + proposals | Fee structure differs |
 | Contra | Independents, portfolio-led | Commission-free model for freelancers | Strong portfolio pages |

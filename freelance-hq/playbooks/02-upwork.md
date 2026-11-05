@@ -3,7 +3,7 @@
 > Items marked `(verify)` change often. Confirm in Upwork's Help centre.
 
 ## How Upwork differs from Fiverr
-Fiverr: buyers find you. Upwork: you mostly **find jobs** (and get invited once your profile ranks). Proposals cost **Connects** (verify current price per Connect and per-job amounts). Fee: **10% flat** on freelancer earnings (verify). Fixed-price contracts use milestones with escrow; hourly contracts use the work diary/time tracker for payment protection.
+Fiverr: buyers find you. Upwork: you mostly **find jobs** (and get invited once your profile ranks). Proposals cost **Connects** (verify current price per Connect and per-job amounts). Fee: **variable 0-15% per contract**, shown to you before you submit a proposal (older guides say "10% flat"; that is outdated, verify). Connects cost about $0.15 each. Fixed-price contracts use milestones with escrow; hourly contracts use the work diary/time tracker for payment protection.
 
 ## Profile that converts
 - Photo, specialised headline (outcome + niche), first-2-line overview hook.

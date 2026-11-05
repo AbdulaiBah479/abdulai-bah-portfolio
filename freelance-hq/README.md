@@ -6,26 +6,35 @@ A Claude Code project that runs a one-person freelance and digital-products busi
 > Honest note: this gives you the system, templates and AI workflows. It does not guarantee income.
 > Results depend on your niche, proof, consistency and the market. Fees and rules marked `(verify)` change: check the platform's current help page.
 
+## New to all this? Start here
+1. Read `start-here/00-READ-ME-FIRST.md` (10 minutes, explains everything in plain language).
+2. Follow `start-here/01-setup-windows.md`, then run `/start` in Claude.
+3. Follow `start-here/04-first-14-days.md`. Look up any word in `start-here/02-glossary.md` or type `/explain <word>`.
+
 ## Start in 3 steps
 ```bash
 cd freelance-hq
-claude            # loads CLAUDE.md, 10 skills, 8 agents, 7 commands from .claude/
+claude            # loads CLAUDE.md, 17 skills, 11 agents, 14 commands from .claude/
+bash scripts/init_tracker.sh   # creates your PRIVATE tracker files (repo is public)
 ```
-Then type: `/niche` (let Claude read your portfolio and recommend one offer to test).
+Then type: `/start` (Claude interviews you and writes your personal plan).
 
 ## What is inside
 | Folder | What |
 |---|---|
+| `start-here/` | Beginner course: setup, glossary, how money works, first 14 days, account setup, mistakes, FAQ |
+| `offers/` | 16 ready-to-test services (tiers, delivery steps, tools, risks) |
+| `ideas/` | 110-idea bank, 20 outside-the-box strategies, one-asset-seven-ways, income streams map |
 | `CLAUDE.md` | Rules and index Claude follows |
-| `.claude/skills/` | niche-validator, platform-profile-optimizer, gig-builder, proposal-writer, client-onboarding, digital-product-launch, ebook-pipeline, listing-seo, content-repurposer, weekly-business-review |
-| `.claude/agents/` | market-researcher, gig-copywriter, proposal-specialist, product-builder, ebook-author, client-success-manager, finance-admin, growth-marketer |
-| `.claude/commands/` | `/niche` `/gig` `/proposal` `/product` `/ebook` `/weekly-review` `/launch-checklist` |
+| `.claude/skills/` | niche-validator, platform-profile-optimizer, gig-builder, proposal-writer, client-onboarding, digital-product-launch, ebook-pipeline, listing-seo, content-repurposer, weekly-business-review, beginner-coach, local-business-audit, chatbot-project-delivery, n8n-workflow-productizer, course-builder, newsletter-and-lead-magnet, portfolio-case-study |
+| `.claude/agents/` | market-researcher, gig-copywriter, proposal-specialist, product-builder, ebook-author, client-success-manager, finance-admin, growth-marketer, teacher-coach, automation-engineer, course-designer |
+| `.claude/commands/` | `/start` `/explain` `/idea` `/niche` `/gig` `/proposal` `/audit` `/case-study` `/chatbot` `/product` `/course` `/ebook` `/weekly-review` `/launch-checklist` |
 | `playbooks/` | 13 deep guides: strategy, Fiverr, Upwork, other platforms, direct outreach, productized services, digital products, ebooks, marketing, pricing, legal/tax, AI automation, delivery |
-| `cheatsheets/` | Fiverr, Upwork, fees comparison, pricing formulas, proposal formulas, KDP, product launch, red flags, prompts, routines, SEO tags, Claude Code |
-| `resources/` | 59 verified GitHub repos, free tool stack, platform directory, learning list |
+| `cheatsheets/` | 18 one-pagers: Fiverr, Upwork, fees, storefronts, pricing, proposals, KDP, product launch, red flags, prompts, scripts, routines, SEO tags, n8n, chatbots, design rules, terminal/Git basics, Claude Code |
+| `resources/` | 96 verified GitHub repos, free tool stack, platform directory, MCP/connectors guide, learning list |
 | `templates/` | Gig, proposal, intake, scope, contract-lite, invoice, testimonial, cold email, ebook outline, product listing, launch emails |
 | `tracker/` | CSVs: leads, income, gigs, products, content calendar |
-| `scripts/` | `income_report.py`, `new_client.sh`, `build_ebook.sh` (Pandoc) |
+| `scripts/` | `income_report.py`, `price_calc.py`, `new_client.sh`, `build_ebook.sh` (Pandoc), `init_tracker.sh` |
 | `ebooks/_starter/` | A buildable ebook skeleton |
 
 ## The 30-day plan
@@ -36,6 +45,9 @@ Then type: `/niche` (let Claude read your portfolio and recommend one offer to t
 
 **Month 2-3:** raise prices, add a retainer, publish product #2 and ebook #1 on KDP + direct, start the email list.
 **Month 4+:** bundle, course, affiliates, partner with agencies, productize the top service.
+
+## Privacy note
+This GitHub repo is public. Trackers, drafts, `my-plan.md` and `clients/` are git-ignored so your leads, income and unreleased products stay local. Keep backups somewhere private.
 
 ## Rules that protect your accounts and reputation
 No fake reviews/portfolios/stats, one account per platform, keep payments on-platform, honest AI disclosure, licensed assets only, no income guarantees. Details in `CLAUDE.md` and `cheatsheets/client-red-flags.md`.

@@ -23,7 +23,7 @@ Example: T = $12,000, C = $1,200, tax 20%, 20 h x 46 wk = 920 h -> (13,200 / 0.8
 | Tiered (Good/Better/Best) | Almost always | None; most buyers choose the middle |
 
 ## Marketplace price maths
-Always compute net: `price - platform fee (Fiverr ~20%, Upwork ~10%, verify) - payment/withdrawal fees - your time`. Example Fiverr $100 order: $80 net before withdrawal cost.
+Always compute net: `price - platform fee (Fiverr ~20%, Upwork 0-15% variable, verify) - payment/withdrawal fees - your time`. Example Fiverr $100 order: $80 net before withdrawal cost.
 
 ## Raise prices when
 Calendar > 80% full, you win > 40% of proposals, same job is repeatable in less time, or you earned 5+ great reviews. Raise 15-30% on new clients; give existing clients 30 days notice.
