@@ -1,6 +1,6 @@
 # Trading HQ
 
-**New here? Read `docs/START-HERE.md` first (everything explained by category), keep `docs/GLOSSARY.md` open.**
+**Your personal plan: `docs/MY-PLAN.md`.** **New here? Read `docs/START-HERE.md` first (everything explained by category), keep `docs/GLOSSARY.md` open.**
 
 One workspace for learning and practising **crypto (Binance), forex, stocks, ETFs, dividends, bonds**, and
 building an **automated bot**: safely, with paper trading by default.
