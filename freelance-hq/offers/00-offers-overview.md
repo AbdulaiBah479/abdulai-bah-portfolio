@@ -2,7 +2,7 @@
 
 An **offer** is a specific thing a specific buyer pays for. Beginners fail by being vague ("I do AI"). Winners are specific ("I set up an AI chatbot on your website that answers customer questions 24/7, in 5 days").
 
-Details for every offer are in `01-offers-catalog.md`. Price ranges there are **starting points to test, not guarantees**; check what real competitors charge with `/niche`.
+**Start with `02-bah-digital-service-menu.md`**: the master list of everything Bah.Digital can offer, ranked by how easy and how payable each service is (Tier A launch now, Tier B after first reviews, Tier C later). Then see `03-packages-and-recurring-plans.md` (bundles and monthly plans) and `04-markets-local-and-global.md` (where to sell). Technical detail for 16 core offers is in `01-offers-catalog.md`. Price ranges there are **starting points to test, not guarantees**; check what real competitors charge with `/niche`.
 
 ## Quick ranking for a beginner with your portfolio
 Scores 1-5 (5 = best for a beginner). "Speed" = how fast you could get a first paid order. "Proof" = how well your existing portfolio supports it.

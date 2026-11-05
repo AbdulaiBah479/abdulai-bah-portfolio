@@ -10,7 +10,7 @@ Plan for about **2-3 hours a day**. If you have less, spread it over more days; 
 
 ## Day 2: Choose ONE offer
 - **Goal:** one clear thing to sell.
-- **Do:** read `offers/00-offers-overview.md`; look at the top 3 Claude suggests.
+- **Do:** read `offers/02-bah-digital-service-menu.md` (Tier A = launch now). Then type `/menu` so Claude picks your launch pair.
 - **Ask Claude:** `/niche` then "Compare the top 3 for a beginner with my portfolio. Which one is fastest to a first paid order and why?"
 - **Done when:** you wrote one sentence: "I help [who] get [result] by [how]."
 

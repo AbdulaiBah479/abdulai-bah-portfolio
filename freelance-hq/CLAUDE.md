@@ -70,6 +70,7 @@ end with ONE next action and a time estimate, and say what must be done by hand.
 | Weekly numbers, decisions, next actions | `/weekly-review` -> skill `weekly-business-review` |
 | Pre-launch quality gate | `/launch-checklist` |
 | First-time setup, explain anything, personal plan | `/start`, `/explain`, skill `beginner-coach` |
+| Choose my services, packages, offer sheet, pitch | `/menu` -> skill `service-menu-builder` (reads `offers/02-04` and the Bah.Digital business plan) |
 | Ideas matched to my skills | `/idea` (reads `ideas/` and `offers/`) |
 | Free audit of a local business for outreach | `/audit` -> skill `local-business-audit` |
 | Turn a project into proof | `/case-study` -> skill `portfolio-case-study` |
@@ -82,10 +83,12 @@ Subagents (in `.claude/agents/`): `market-researcher`, `gig-copywriter`, `propos
 `product-builder`, `ebook-author`, `client-success-manager`, `finance-admin`, `growth-marketer`,
 `teacher-coach`, `automation-engineer`, `course-designer`.
 
+The owner's company plan lives in `../bah-digital/docs/BUSINESS-PLAN.md` (launch offers, prices, Sierra Leone context, Green Vital as client #1). Keep this project consistent with it; do not contradict its prices without saying why.
+
 ## Folder map
 ```
 start-here/    Beginner course: setup, glossary, how money works, first 14 days, accounts, mistakes, FAQ
-offers/        16 ready-to-test services with tiers, delivery steps and tools
+offers/        Master Bah.Digital service menu (47 services ranked easy + payable), packages and monthly plans, local vs global markets, 16 detailed offers
 ideas/         110-idea bank, outside-the-box strategies, one-asset-seven-ways, income streams map
 playbooks/     Deep how-to per lane (strategy, Fiverr, Upwork, other platforms, direct, products, ebooks, marketing, money, legal, AI workflow, delivery)
 cheatsheets/   One-page references (fees, formulas, tags, prompts, red flags, routines)

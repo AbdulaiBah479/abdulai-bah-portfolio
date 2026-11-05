@@ -14,7 +14,7 @@ A Claude Code project that runs a one-person freelance and digital-products busi
 ## Start in 3 steps
 ```bash
 cd freelance-hq
-claude            # loads CLAUDE.md, 17 skills, 11 agents, 14 commands from .claude/
+claude            # loads CLAUDE.md, 18 skills, 11 agents, 15 commands from .claude/
 bash scripts/init_tracker.sh   # creates your PRIVATE tracker files (repo is public)
 ```
 Then type: `/start` (Claude interviews you and writes your personal plan).
@@ -23,16 +23,16 @@ Then type: `/start` (Claude interviews you and writes your personal plan).
 | Folder | What |
 |---|---|
 | `start-here/` | Beginner course: setup, glossary, how money works, first 14 days, account setup, mistakes, FAQ |
-| `offers/` | 16 ready-to-test services (tiers, delivery steps, tools, risks) |
+| `offers/` | Master service menu (47 services ranked by easy + payable), packages and monthly plans, local/global markets, 16 detailed offers |
 | `ideas/` | 110-idea bank, 20 outside-the-box strategies, one-asset-seven-ways, income streams map |
 | `CLAUDE.md` | Rules and index Claude follows |
 | `.claude/skills/` | niche-validator, platform-profile-optimizer, gig-builder, proposal-writer, client-onboarding, digital-product-launch, ebook-pipeline, listing-seo, content-repurposer, weekly-business-review, beginner-coach, local-business-audit, chatbot-project-delivery, n8n-workflow-productizer, course-builder, newsletter-and-lead-magnet, portfolio-case-study |
 | `.claude/agents/` | market-researcher, gig-copywriter, proposal-specialist, product-builder, ebook-author, client-success-manager, finance-admin, growth-marketer, teacher-coach, automation-engineer, course-designer |
-| `.claude/commands/` | `/start` `/explain` `/idea` `/niche` `/gig` `/proposal` `/audit` `/case-study` `/chatbot` `/product` `/course` `/ebook` `/weekly-review` `/launch-checklist` |
+| `.claude/commands/` | `/start` `/explain` `/menu` `/idea` `/niche` `/gig` `/proposal` `/audit` `/case-study` `/chatbot` `/product` `/course` `/ebook` `/weekly-review` `/launch-checklist` |
 | `playbooks/` | 13 deep guides: strategy, Fiverr, Upwork, other platforms, direct outreach, productized services, digital products, ebooks, marketing, pricing, legal/tax, AI automation, delivery |
 | `cheatsheets/` | 18 one-pagers: Fiverr, Upwork, fees, storefronts, pricing, proposals, KDP, product launch, red flags, prompts, scripts, routines, SEO tags, n8n, chatbots, design rules, terminal/Git basics, Claude Code |
 | `resources/` | 299 verified GitHub repos + a pick-by-goal guide, free tools beyond GitHub, platform directory, MCP/connectors guide, learning list |
-| `templates/` | Gig, proposal, intake, scope, contract-lite, invoice, testimonial, cold email, ebook outline, product listing, launch emails |
+| `templates/` | Gig, proposal, intake, scope, contract-lite, invoice, testimonial, cold email, ebook outline, product listing, launch emails, AI Business Audit report, one-page offer sheet, WhatsApp sales messages, monthly care plan |
 | `tracker/` | CSVs: leads, income, gigs, products, content calendar |
 | `scripts/` | `income_report.py`, `price_calc.py`, `new_client.sh`, `build_ebook.sh` (Pandoc), `init_tracker.sh` |
 | `ebooks/_starter/` | A buildable ebook skeleton |
