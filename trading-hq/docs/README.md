@@ -1,6 +1,6 @@
 # Docs index
 
-Read in this order: **00 → asset class you care about → 07 → 08 → 10**. Keep `cheatsheets/` open while trading.
+**Beginner? `START-HERE.md` then `GLOSSARY.md`.** Read in this order: **00 → asset class you care about → 07 → 08 → 10**. Keep `cheatsheets/` open while trading.
 
 - 00 Risk & rules (read first, re-read monthly)
 - 01 Binance/crypto · 02 Forex · 03 Stocks/ETFs · 04 Dividends · 05 Bonds · 06 Other instruments

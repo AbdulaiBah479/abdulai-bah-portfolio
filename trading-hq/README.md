@@ -1,5 +1,7 @@
 # Trading HQ
 
+**New here? Read `docs/START-HERE.md` first (everything explained by category), keep `docs/GLOSSARY.md` open.**
+
 One workspace for learning and practising **crypto (Binance), forex, stocks, ETFs, dividends, bonds**, and
 building an **automated bot**: safely, with paper trading by default.
 
@@ -11,7 +13,7 @@ building an **automated bot**: safely, with paper trading by default.
 ```bash
 cd trading-hq/bot
 pip install -r requirements.txt
-python -m unittest discover -s tests                         # 18 tests should pass
+python -m unittest discover -s tests                         # 19 tests should pass
 python -m tradingbot rotate --source ccxt                    # multi-asset momentum rotation
 python -m tradingbot telegram                                # private Telegram co-pilot (see docs/11)
 python -m tradingbot backtest --strategy donchian_breakout   # synthetic data demo
@@ -19,6 +21,7 @@ python -m tradingbot backtest --source ccxt --symbol BTC/USDT --timeframe 1d --l
 python -m tradingbot backtest --source yfinance --symbol SPY --ppy 252
 python -m tradingbot paper --source ccxt --symbol ETH/USDT --strategy sma_cross
 python tools/calc.py size --equity 10000 --risk 0.01 --entry 60000 --stop 58500
+python tools/montecarlo.py --win 0.45 --payoff 2 --risk 0.01   # how bad can a bad streak get?
 ```
 Open the folder in Claude Code (`claude` inside `trading-hq/`) and use the skills below.
 

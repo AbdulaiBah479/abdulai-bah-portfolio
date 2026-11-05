@@ -142,5 +142,16 @@ class TelegramTests(unittest.TestCase):
         self.assertIsNotNone(self.T.process_update(upd(111, "/help"), 111, self.st, self.fetch))
 
 
+class MonteCarlo(unittest.TestCase):
+    def test_more_risk_means_deeper_drawdowns_and_fair_coin_has_negative_edge_after_costs(self):
+        import montecarlo as mc
+        lo = mc.simulate(risk=0.01, runs=500)
+        hi = mc.simulate(risk=0.10, runs=500)
+        self.assertGreater(hi["median_max_drawdown"] * -1, lo["median_max_drawdown"] * -1)
+        bad = mc.simulate(win=0.40, payoff=1.0, runs=500)   # negative expectancy
+        self.assertLess(bad["expectancy_R"], 0)
+        self.assertGreater(bad["prob_loss"], 0.5)
+
+
 if __name__ == "__main__":
     unittest.main()
