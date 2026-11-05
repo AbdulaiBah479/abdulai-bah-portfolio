@@ -11,7 +11,9 @@ building an **automated bot**: safely, with paper trading by default.
 ```bash
 cd trading-hq/bot
 pip install -r requirements.txt
-python -m unittest discover -s tests                         # 11 tests should pass
+python -m unittest discover -s tests                         # 18 tests should pass
+python -m tradingbot rotate --source ccxt                    # multi-asset momentum rotation
+python -m tradingbot telegram                                # private Telegram co-pilot (see docs/11)
 python -m tradingbot backtest --strategy donchian_breakout   # synthetic data demo
 python -m tradingbot backtest --source ccxt --symbol BTC/USDT --timeframe 1d --limit 1000
 python -m tradingbot backtest --source yfinance --symbol SPY --ppy 252
@@ -34,6 +36,7 @@ Open the folder in Claude Code (`claude` inside `trading-hq/`) and use the skill
 | Backtesting & automation / bots | `docs/08-backtesting-and-bots.md` |
 | GitHub repos, tools, data, learning | `docs/09-resources.md` |
 | Roadmap (30/90/180 days) | `docs/10-roadmap.md` |
+| Telegram co-pilot + creative ideas | `docs/11-telegram-and-creative-edge.md` |
 | Cheat sheets | `docs/cheatsheets/` |
 
 ## Claude skills (`.claude/skills`)

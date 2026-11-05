@@ -33,3 +33,8 @@ stocks, ETFs, dividends, bonds and automated bots. The owner is learning; explai
 - Prefer boring, diversified, low-cost approaches (index ETFs, dividend growth, bond ladders) as the baseline
   that any active strategy must beat.
 - Run `python -m unittest discover -s bot/tests` after changing bot code.
+
+## Telegram co-pilot
+`bot/tradingbot/telegram_bot.py` is alerts + analysis only. Never add order placement, exchange keys, or
+withdrawal capability to it, never remove the owner-chat-ID check or the loss-streak lock, never log the token.
+Default strategy baseline: `vol_target_ensemble`. See `docs/11-telegram-and-creative-edge.md`.

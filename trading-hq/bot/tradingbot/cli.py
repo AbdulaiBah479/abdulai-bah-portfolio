@@ -76,6 +76,23 @@ def cmd_signal(a):
     print(f"{a.symbol} {a.strategy}: target position = {s:+.0f} as of {df.index[-1]} (NOT financial advice)")
 
 
+def cmd_rotate(a):
+    from . import rotation as R
+    syms = a.symbols.split(",")
+    if a.source == "synthetic":
+        px = pd.concat({s: D.synthetic(seed=i + 1)["close"] for i, s in enumerate(syms)}, axis=1)
+    else:
+        get = (lambda s: D.from_ccxt(s, "1d", 1000)) if a.source == "ccxt" else D.from_yfinance
+        px = pd.concat({s: get(s)["close"] for s in syms}, axis=1).dropna()
+    w = R.momentum_weights(px, lookback=a.lookback, top_n=a.top)
+    _, m = R.backtest_weights(px, w, periods_per_year=a.ppy)
+    _, b = R.equal_weight_hold(px, periods_per_year=a.ppy)
+    show = lambda d: {k: round(v, 3) for k, v in d.items() if k in ("total_return", "cagr", "sharpe", "max_drawdown")}
+    print("rotation   :", show(m))
+    print("equal-hold :", show(b))
+    print("latest weights:", {k: round(v, 2) for k, v in w.iloc[-1].items() if v > 0} or "CASH")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="tradingbot")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -93,6 +110,14 @@ def main(argv=None):
         s.add_argument("--cash", type=float, default=10_000)
         s.add_argument("--risk", type=float, default=0.01)
         s.set_defaults(fn=fn)
+    r = sub.add_parser("rotate", help="multi-asset momentum rotation vs equal-weight hold")
+    r.add_argument("--symbols", default="BTC/USDT,ETH/USDT,BNB/USDT,SOL/USDT")
+    r.add_argument("--source", default="synthetic", choices=["synthetic", "ccxt", "yfinance"])
+    r.add_argument("--lookback", type=int, default=90)
+    r.add_argument("--top", type=int, default=2)
+    r.add_argument("--ppy", type=int, default=365)
+    r.set_defaults(fn=cmd_rotate)
+    sub.add_parser("telegram", help="run the private Telegram co-pilot").set_defaults(fn=lambda a: __import__("tradingbot.telegram_bot", fromlist=["run"]).run())
     a = p.parse_args(argv)
     a.fn(a)
 
