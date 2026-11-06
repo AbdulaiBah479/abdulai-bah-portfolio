@@ -71,6 +71,7 @@ end with ONE next action and a time estimate, and say what must be done by hand.
 | Pre-launch quality gate | `/launch-checklist` |
 | First-time setup, explain anything, personal plan | `/start`, `/explain`, skill `beginner-coach` |
 | Choose my services, packages, offer sheet, pitch | `/menu` -> skill `service-menu-builder` (reads `offers/02-04` and the Bah.Digital business plan) |
+| Check and prepare a post before publishing | `/publish-check` -> skill `newsletter-publishing-qa`, `scripts/check_post.py`, `playbooks/13-newsletter-publishing-assistant.md` |
 | Ideas matched to my skills | `/idea` (reads `ideas/` and `offers/`) |
 | Free audit of a local business for outreach | `/audit` -> skill `local-business-audit` |
 | Turn a project into proof | `/case-study` -> skill `portfolio-case-study` |
@@ -95,7 +96,7 @@ cheatsheets/   One-page references (fees, formulas, tags, prompts, red flags, ro
 resources/     Verified GitHub repos, free tool stack, platform directory, learning list
 templates/     Copy-paste documents (proposals, gigs, contracts-lite, invoices, emails, ebook outline)
 tracker/       CSV pipelines: leads, income, gigs, products, content calendar
-scripts/       income_report.py, price_calc.py, build_ebook.sh, new_client.sh, init_tracker.sh
+scripts/       check_post.py (pre-publish checker), income_report.py, price_calc.py, build_ebook.sh, new_client.sh, init_tracker.sh
 products/      Digital product work-in-progress
 ebooks/        Manuscripts and build output
 clients/       Private client work (git-ignored)

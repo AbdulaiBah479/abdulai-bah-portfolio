@@ -43,6 +43,7 @@ Bah.Digital as a company can proudly list many services. But each *gig, profile,
 | B4 | **Social media management** (monthly) | 4 | 3-4 | plan: local $100-400/month, intl $400-1,500/month | Content calendar, posts, replies, report |
 | B5 | **Digital Growth Package** (website + social + email + monthly report) | 3 | 4 | plan: $300-1,500/month | Your plan's offer #4 |
 | B6 | **Email/newsletter setup and writing** | 4 | 3 | hyp: setup $50-200 + $50-300/month | Free-tier tools |
+| B6b | **Newsletter/blog publishing and QA** (format, check links/images/metadata, schedule, log) | 4 | 3 | hyp: per post $5-25 or $100-500/month | Uses `scripts/check_post.py`; see playbook 13 |
 | B7 | **Local SEO + website SEO fixes** | 3 | 3-4 | hyp: $50-300 one-off | Use Lighthouse audit |
 | B8 | **Reporting automation** (weekly KPI email/dashboard) | 3 | 4 | hyp: $150-600 | Sheets + n8n |
 | B9 | **Dashboards** (Sheets/Looker Studio/Metabase) | 3 | 4 | plan: local $200-800, intl $500-3,000 | Good for NGOs and shops |
